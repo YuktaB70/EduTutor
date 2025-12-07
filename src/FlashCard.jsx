@@ -10,7 +10,7 @@ function FlashCard({ onDelete, fileId }) {
     useEffect(() => {
       const genQA = async () => {
         try {
-          const response = await fetch(`https://aitutor-production-cb21.up.railway.app/pdf/${fileId}/GenQA`);
+          const response = await fetch(`http://3.236.8.71:8090/pdf/${fileId}/GenQA`);
           if (!response.ok) throw new Error("Failed to generate questions");
   
           const data = await response.json(); 

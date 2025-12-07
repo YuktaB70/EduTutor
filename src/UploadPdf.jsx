@@ -18,7 +18,7 @@ function UploadPdf() {
             setFile(uploadedFile);  
 
             try{
-              const response = await fetch("https://aitutor-production-cb21.up.railway.app/pdf/uploadpdf", {
+              const response = await fetch("http://3.236.8.71:8090/pdf/uploadpdf", {
                 method: "POST",
                 body: formData
               });
@@ -55,7 +55,7 @@ function UploadPdf() {
 
             try {
               
-              const response = await fetch("https://aitutor-production-cb21.up.railway.app/pdf/uploadpdf", {
+              const response = await fetch("http://3.236.8.71:8090/pdf/uploadpdf", {
                 method: "POST",
                 body: formData
               });
